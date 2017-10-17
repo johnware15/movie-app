@@ -1,0 +1,34 @@
+{
+  "name": "movie-app",
+  "version": "1.0.0",
+  "description": "Movie app for users to writer reviews",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "db-init": "psql < schema.sql",
+    "testdb-init": "export NODE_ENV=test && psql < schema_test.sql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnware15/movie-app.git"
+  },
+  "author": "johnware15",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnware15/movie-app/issues"
+  },
+  "homepage": "https://github.com/johnware15/movie-app#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "pg": "^7.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1"
+  }
+}
