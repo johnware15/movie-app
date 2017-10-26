@@ -31,4 +31,7 @@ const signup = function(text, values) {
 //   })
 // }
 
-module.exports = signup
+module.exports = {
+  signup,
+  signupText
+}  
